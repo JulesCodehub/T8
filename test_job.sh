@@ -11,8 +11,8 @@
 echo "Activating My custom environment"
 source ~/venv/bin/activate
 
-#echo "Running T8 Test"
-#python3 tools/train.py configs/pspnet_unet_s5-d16_64x64_40k_drive.py --options model.pretrained=swin_transformer.py [model.backbone.use_checkpoint=True]
+echo "Running T8 Test"
+python3 main.py
 
 echo "Deactivating TensorFlow-2.6.2 environment"
 deactivate
